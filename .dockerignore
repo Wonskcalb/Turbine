@@ -1,0 +1,17 @@
+# Cache stuff is useless
+.ruff_cache
+
+# Ignore generated stuff
+poetry.lock
+**/__pycache__
+**/*.sqlite3
+
+# Ignore local dev stuff
+.git
+.gitignore
+tasks
+Dockerfile
+README.md
+pyproject.toml
+**/.env
+requirements.txt

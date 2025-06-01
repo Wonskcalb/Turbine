@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 .cache_ggshield
 requirements.txt
+*.sqlite3

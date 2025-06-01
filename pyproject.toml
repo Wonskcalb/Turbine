@@ -1,26 +1,26 @@
-[tool.poetry]
+[project]
 name = "turbine"
 version = "0.1.0"
 description = "Stop fighting your kitchen. Turbine tracks, suggest, and give you ideas to not just eat, but also enjoy cooking."
-authors = ["Valentin Famelart"]
+authors = [{ name = "Valentin Famelart" }]
+requires-python = "~=3.11"
 readme = "README.md"
+dependencies = [
+    "Django~=5.2",
+    "django-environ",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-Django = "^4.2"
-django-environ = "^0.10.0"
+[dependency-groups]
+dev = [
+    "pytest",
+    "factory-boy",
+    "pytest-django",
+    "ruff",
+]
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.3.1"
-factory-boy = "^3.2.1"
-pytest-django = "^4.5.2"
-ggshield = "^1.16.0"
-ruff = "^0.0.270"
-black = "^23.3.0"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.isort]
 profile = "black"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"

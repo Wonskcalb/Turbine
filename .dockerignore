@@ -2,7 +2,7 @@
 .ruff_cache
 
 # Ignore generated stuff
-poetry.lock
+uv.lock
 **/__pycache__
 **/*.sqlite3
 
@@ -14,4 +14,4 @@ Dockerfile
 README.md
 pyproject.toml
 **/.env
-requirements.txt
+.venv

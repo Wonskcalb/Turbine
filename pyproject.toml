@@ -16,6 +16,7 @@ dev = [
     "factory-boy",
     "pytest-django",
     "ruff",
+    "django-types>=0.20.0",
 ]
 
 [build-system]
